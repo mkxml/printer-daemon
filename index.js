@@ -21,7 +21,12 @@ const { PORT = 9222 } = process.env;
 
 (async function server() {
   const corsOptions = {
-    origin: 'https://mkxml.github.io/web-zpl-print-daemon',
+    origin: [
+      'https://mkxml.github.io',
+      'https://mkxml.github.io/',
+      'https://mkxml.github.io/web-zpl-print-daemon/',
+      'https://mkxml.github.io/web-zpl-print-daemon',
+    ],
     optionsSucessStatus: 200,
   };
 
